@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetorA = [];
+let vetorB = [];
+let vetorC = [];
+let texto = "Resultado do Vetor C (A + B):\n";
+
+for (let i = 0; i < 5; i++) {
+    vetorA[i] = parseInt(prompt("Vetor A - Digite o " + (i + 1) + "º número:"));
+}
+
+for (let i = 0; i < 5; i++) {
+    vetorB[i] = parseInt(prompt("Vetor B - Digite o " + (i + 1) + "º número:"));
+}
+
+for (let i = 0; i < 5; i++) {
+    vetorC[i] = vetorA[i] + vetorB[i];
+    texto = texto + "Posição " + i + ": " + vetorC[i] + "\n";
+}
+
+alert(texto);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetorA = [];
+        let encontrado = false;
+
+for (let i = 0; i < 10; i++) {
+    vetorA[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
+}
+
+let pesquisa = parseInt(prompt("Digite o número que deseja pesquisar:"));
+
+for (let i = 0; i < 10; i++) {
+    if (vetorA[i] == pesquisa) {
+        encontrado = true;
+    }
+}
+
+if (encontrado == true) {
+    alert("O número " + pesquisa + " foi ENCONTRADO no vetor.");
+} else {
+    alert("O número " + pesquisa + " NÃO foi encontrado no vetor.");
+}
+
+    </script>
+</body>
+</html>

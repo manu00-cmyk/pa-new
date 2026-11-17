@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let vetorA = [];
+    let soma = 0;
+
+for (let i = 0; i < 8; i++) {
+    vetorA[i] = parseFloat(prompt("Digite a " + (i + 1) + "ª nota:"));
+    soma = soma + vetorA[i];
+}
+
+let media = soma / 8;
+alert("A média das notas é: " + media);
+</script>
+</body>
+</html>

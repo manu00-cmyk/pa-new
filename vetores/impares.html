@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let vetorA = [];
+     let pares = 0;
+     let impares = 0;
+
+for (let i = 0; i < 10; i++) {
+    vetorA[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
+    
+    if (vetorA[i] % 2 == 0) {
+        pares = pares + 1;
+    } else {
+        impares = impares + 1;
+    }
+}
+
+alert("Quantidade de pares: " + pares + "\nQuantidade de ímpares: " + impares);
+
+    </script>
+</body>
+</html>
